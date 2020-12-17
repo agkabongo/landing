@@ -7,8 +7,9 @@ let min = currentDate.getMinutes();
 let secondes = currentDate.getSeconds();
 let hours = currentDate.getHours();
 let clock = document.createElement('h1');
+clock.className='clock'
 let calendar = document.createElement('h1');
-
+calendar.className = 'calendar'
 let display = document.querySelector('.display')
 
 display.appendChild(clock)
@@ -34,9 +35,9 @@ let timer = () => {
   
    
     
-    clock.innerHTML = hours + ':' + min + ':' + secondes
+    clock.innerHTML = hours + ':' + min 
     console.log(clock)
-    return secondes;
+
 }
 
 timer()
